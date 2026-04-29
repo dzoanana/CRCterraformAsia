@@ -8,7 +8,7 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = data.azurerm_resource_group.main.name
+    resource_group_name  = "rg-crc2026-student-213-lab"
     storage_account_name = "asiasatf"
     container_name       = "terraform"
     key                  = "terraform.tfstate"
