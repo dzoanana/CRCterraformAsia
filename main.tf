@@ -2,7 +2,7 @@
 # Etap 1: Key Vault
 # -------------------------------------------------------
 resource "azurerm_key_vault" "default" {
-  name                = "kvnameofkvhere"
+  name                = "dzoanakv"
   resource_group_name = data.azurerm_resource_group.default.name
   location            = data.azurerm_resource_group.default.location
   tenant_id           = data.azurerm_client_config.current.tenant_id
